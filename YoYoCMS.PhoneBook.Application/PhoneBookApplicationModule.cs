@@ -11,7 +11,15 @@ namespace YoYoCMS.PhoneBook
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
+
+
+
             Configuration.Authorization.Providers.Add<PersonAppAuthorizationProvider>();
+
+            
+
+ 
+
         }
     }
 }

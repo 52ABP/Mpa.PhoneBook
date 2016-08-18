@@ -20,6 +20,7 @@
             <table class="table">
                 <thead>
                 <tr>
+                    <th>操作</th>
                     <th>@L("Name")</th>
                     <th>@L("EmailAddress")</th>
                     <th>@L("CreationTime")</th>
@@ -29,6 +30,7 @@
                 @foreach (var person in Model.Items)
                 {
                     <tr>
+                        <td><a href="javascript:void()" data-toggle="modal" data-target="#PersonCreateModal"  onclick="editPerson(@person.Id);" >编辑</a>| <a  href="javascript:void()" onclick="deletePerson(@person.Id);"> 删除</a></td>
                         <td>@person.Name </td>
                         <td>@person.EmailAddress</td>
                         <td>@person.CreationTime</td>
@@ -62,6 +64,7 @@
                     <div class="form-group">
                         <label>@L("Name")</label>
                         <input class="form-control" type="text" value="" name="Name" required maxlength="@PhoneBookConsts.MaxNameLength" minlength="2">
+                        <input   type="hidden"   name="Id" >
 
                     </div>
 

@@ -7,10 +7,10 @@ using YoYoCMS.PhoneBook.Persons;
 
 namespace YoYoCMS.PhoneBook.Persons.Dtos
 {
-	/// <summary>
+    /// <summary>
     /// 联系人列表Dto
     /// </summary>
-    [AutoMapFrom(typeof(Person))]
+  [AutoMap(typeof(Person))]
     public class PersonListDto : EntityDto<int>
     {
         /// <summary>

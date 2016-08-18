@@ -16,6 +16,8 @@ namespace YoYoCMS.PhoneBook.Api
     [DependsOn(typeof(AbpWebApiModule), typeof(PhoneBookApplicationModule))]
     public class PhoneBookWebApiModule : AbpModule
     {
+         
+
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
@@ -24,9 +26,19 @@ namespace YoYoCMS.PhoneBook.Api
                 .ForAll<IApplicationService>(typeof(PhoneBookApplicationModule).Assembly, "app")
                 .Build();
 
+    
+
             Configuration.Modules.AbpWebApi().HttpConfiguration.Filters.Add(new HostAuthenticationFilter("Bearer"));
+
+            Configuration.Modules.AbpWebApi().HttpConfiguration.IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Always;
+
+
+
+
+
             //调用SwaggerUi
             ConfigureSwaggerUi();
+          
         }
 
         /// <summary>

@@ -21,6 +21,5 @@
 ### [在ABP中创建Person实体类](http://www.cnblogs.com/wer-ltm/p/5777978.html#autoid-0-0-0)
 
 ### [实现ABP中Person类的权限功能link](http://www.cnblogs.com/wer-ltm/p/5778326.html)
-
-### [link]()
+ 
 
