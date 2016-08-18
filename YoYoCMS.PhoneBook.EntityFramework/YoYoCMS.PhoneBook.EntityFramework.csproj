@@ -181,6 +181,10 @@
     <Compile Include="Migrations\201608161310129_add_Person.Designer.cs">
       <DependentUpon>201608161310129_add_Person.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201608180549384_Add_Phones.cs" />
+    <Compile Include="Migrations\201608180549384_Add_Phones.Designer.cs">
+      <DependentUpon>201608180549384_Add_Phones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PhoneBookDataModule.cs" />
@@ -251,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201608161310129_add_Person.resx">
       <DependentUpon>201608161310129_add_Person.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608180549384_Add_Phones.resx">
+      <DependentUpon>201608180549384_Add_Phones.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -5,6 +5,7 @@ using YoYoCMS.PhoneBook.Authorization.Roles;
 using YoYoCMS.PhoneBook.EntityMapper.Persons;
 using YoYoCMS.PhoneBook.MultiTenancy;
 using YoYoCMS.PhoneBook.Persons;
+using YoYoCMS.PhoneBook.Phones;
 using YoYoCMS.PhoneBook.Users;
 
 namespace YoYoCMS.PhoneBook.EntityFramework
@@ -14,6 +15,7 @@ namespace YoYoCMS.PhoneBook.EntityFramework
         //TODO: Define an IDbSet for your Entities...
 
         public IDbSet<Person> Persons { get; set; }
+        public IDbSet<Phone> Phones { get; set; }
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.
