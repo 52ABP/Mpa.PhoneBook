@@ -191,6 +191,7 @@
     </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\SeedData\DefaultPhonesCreator.cs" />
     <Compile Include="PhoneBookDataModule.cs" />
     <Compile Include="Migrations\SeedData\DefaultEditionsCreator.cs" />
     <Compile Include="Migrations\SeedData\DefaultLanguagesCreator.cs" />

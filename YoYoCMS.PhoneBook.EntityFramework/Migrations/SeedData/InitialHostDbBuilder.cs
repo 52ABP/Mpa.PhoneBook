@@ -20,6 +20,7 @@ namespace YoYoCMS.PhoneBook.Migrations.SeedData
             new DefaultLanguagesCreator(_context).Create();
             new HostRoleAndUserCreator(_context).Create();
             new DefaultSettingsCreator(_context).Create();
+            new DefaultPhonesCreator(_context).Create();
         }
     }
 }

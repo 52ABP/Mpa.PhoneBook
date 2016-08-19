@@ -18,5 +18,8 @@ namespace YoYoCMS.PhoneBook.Migrations
             CreateIndex("dbo.PbPhone", "Phone_Id");
             AddForeignKey("dbo.PbPhone", "Phone_Id", "dbo.PbPhone", "Id");
         }
+
+    
+
     }
 }
