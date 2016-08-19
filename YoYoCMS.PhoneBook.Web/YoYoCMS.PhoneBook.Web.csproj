@@ -483,7 +483,6 @@
     <Content Include="Views\Tenants\Index.cshtml" />
     <Content Include="Views\Users\Index.cshtml" />
     <Content Include="Views\PersonManage\Index.cshtml" />
-    <Content Include="Views\PersonManage\View.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
