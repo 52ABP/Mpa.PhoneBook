@@ -20,7 +20,6 @@
 
             var personEditDto = _$form.serializeFormToObject();
             abp.ui.setBusy(_$modal);
-            console.log(personEditDto);
             _personService.createOrUpdatePersonAsync({ personEditDto }).done(function() {
                 _$modal.modal("hide");
 

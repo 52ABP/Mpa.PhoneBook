@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using Abp.Extensions;
 using YoYoCMS.PhoneBook.Persons;
+using YoYoCMS.PhoneBook.Phones;
 
 namespace YoYoCMS.PhoneBook.Persons.Dtos
 {
@@ -25,5 +27,9 @@ namespace YoYoCMS.PhoneBook.Persons.Dtos
         /// 创建时间
         /// </summary>
         public      DateTime CreationTime { get; set; }
+
+
+        public Collection<PhoneListDto> Phones { get; set; } 
+
     }
 }

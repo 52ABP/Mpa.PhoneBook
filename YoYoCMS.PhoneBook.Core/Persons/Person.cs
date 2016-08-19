@@ -1,6 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Abp.Domain.Entities.Auditing;
+using YoYoCMS.PhoneBook.Phones;
 
 namespace YoYoCMS.PhoneBook.Persons
 {
@@ -22,5 +24,8 @@ namespace YoYoCMS.PhoneBook.Persons
         /// </summary>
         [MaxLength(PhoneBookConsts.MaxEmailAddressLength)]
         public virtual string EmailAddress { get; set; }
+
+        public virtual ICollection<Phone> Phones { get; set; }
+
     }
 }

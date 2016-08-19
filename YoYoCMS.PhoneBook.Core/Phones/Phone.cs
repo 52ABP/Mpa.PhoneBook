@@ -35,6 +35,5 @@ namespace YoYoCMS.PhoneBook.Phones
         [MaxLength(MaxNumberLength)]
         public virtual string Number { get; set; }
 
-        public virtual ICollection<Phone> Phones { get; set; }
     }
 }

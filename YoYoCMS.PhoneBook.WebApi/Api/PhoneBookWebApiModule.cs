@@ -53,8 +53,7 @@ namespace YoYoCMS.PhoneBook.Api
                     c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
                     //将application层中的注释添加到SwaggerUI中
                     var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-              
-                    var commentsFileName = "Bin//YoYoCMS.PhoneBook.Application.xml";
+                     var commentsFileName = "Bin//YoYoCMS.PhoneBook.Application.xml";
                     var commentsFile = Path.Combine(baseDirectory, commentsFileName);
                     //将注释的XML文档添加到SwaggerUI中
                     c.IncludeXmlComments(commentsFile);
