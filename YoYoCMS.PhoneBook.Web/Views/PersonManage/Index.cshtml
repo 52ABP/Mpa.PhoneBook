@@ -19,47 +19,38 @@
                 <i class="fa fa-plus"></i> @L("CreatePerson")</button>
             <table class="table">
                 <thead>
-                    <tr>
-                        <th>操作</th>
-                        <th>@L("Name")</th>
-                        <th>@L("EmailAddress")</th>
-                        <th>@L("CreationTime")</th>
-                        <th>操作电话簿</th>
-                    </tr>
+                <tr>
+                    <th>操作</th>
+                    <th>@L("Name")</th>
+                    <th>@L("EmailAddress")</th>
+                    <th>@L("CreationTime")</th>
+                    <th>操作电话簿</th>
+                </tr>
                 </thead>
                 <tbody>
-                    @foreach (var person in Model.Items)
-                    {
+                @foreach (var person in Model.Items)
+                {
+                    <tr>
+                        <td><a href="javascript:void()" data-toggle="modal" data-target="#PersonCreateModal" onclick="editPerson(@person.Id);">编辑</a>| <a href="javascript:void()" onclick="deletePerson(@person.Id);"> 删除</a></td>
+                        <td>@person.Name </td>
+                        <td>@person.EmailAddress</td>
+                        <td>@person.CreationTime</td>
                         <tr>
-                            <td><a href="javascript:void()" data-toggle="modal" data-target="#PersonCreateModal" onclick="editPerson(@person.Id);">编辑</a>| <a href="javascript:void()" onclick="deletePerson(@person.Id);"> 删除</a></td>
-                            <td>@person.Name </td>
-                            <td>@person.EmailAddress</td>
-                            <td>@person.CreationTime</td>
-                            
-                            <td>显示/隐藏</td>
-<tr>
-                                    <th>电话类型</th>
-                                    <th>电话号码</th>
-                                </tr>
-                      
-                    @foreach (var phone in person.Phones)
-                    {
-
-                        <tr>
-                            <td>@phone.Type</td>
-                            <td>@phone.Number</td>
-
+                            <th>电话类型</th>
+                            <th>电话号码</th>
                         </tr>
 
-
-                    }
+                        @foreach (var phone in person.Phones)
+                        {
+                            <tr>
+                                <td>@phone.Type</td>
+                                <td>@phone.Number</td>
+                            </tr>
+                        }
                     </tr>
-                    }
-                    </tbody>
-                </table>
-
-
-
+                }
+                </tbody>
+            </table>
 
 
         </div>
@@ -86,7 +77,7 @@
                     <div class="form-group">
                         <label>@L("Name")</label>
                         <input class="form-control" type="text" value="" name="Name" required maxlength="@PhoneBookConsts.MaxNameLength" minlength="2">
-                        <input   type="hidden"   name="Id" >
+                        <input type="hidden" name="Id">
 
                     </div>
 

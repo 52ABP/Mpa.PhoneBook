@@ -1,0 +1,53 @@
+DEBUG 2016-08-19 10:13:46,045 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-08-19 10:13:46,057 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2016-08-19 10:13:46,061 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YoYoCMS.PhoneBook.Web.PhoneBookWebModule, YoYoCMS.PhoneBook.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-08-19 10:13:46,063 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YoYoCMS.PhoneBook.PhoneBookDataModule, YoYoCMS.PhoneBook.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-08-19 10:13:46,063 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-08-19 10:13:46,064 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-08-19 10:13:46,064 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.10.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-08-19 10:13:46,065 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.10.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-08-19 10:13:46,065 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YoYoCMS.PhoneBook.PhoneBookCoreModule, YoYoCMS.PhoneBook.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-08-19 10:13:46,065 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YoYoCMS.PhoneBook.PhoneBookApplicationModule, YoYoCMS.PhoneBook.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-08-19 10:13:46,065 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.10.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-08-19 10:13:46,065 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YoYoCMS.PhoneBook.Api.PhoneBookWebApiModule, YoYoCMS.PhoneBook.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-08-19 10:13:46,065 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.10.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-08-19 10:13:46,065 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.10.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-08-19 10:13:46,065 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.10.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-08-19 10:13:46,065 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.10.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-08-19 10:13:46,065 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.10.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-08-19 10:13:46,068 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2016-08-19 10:13:46,206 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-08-19 10:13:46,206 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-08-19 10:13:46,206 [1    ] o.Configuration.LanguageManagementConfig - Converted PhoneBook (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-08-19 10:13:46,206 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-08-19 10:13:46,473 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: YoYoCMS.PhoneBook.EntityFramework.PhoneBookDbContext, YoYoCMS.PhoneBook.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-08-19 10:13:47,533 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-08-19 10:13:47,563 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-08-19 10:13:47,565 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-08-19 10:13:47,566 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: PhoneBook
+DEBUG 2016-08-19 10:13:47,567 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-08-19 10:13:47,632 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-08-19 10:13:47,645 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes defines auto mapping attributes
+DEBUG 2016-08-19 10:13:47,645 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YoYoCMS.PhoneBook.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-08-19 10:13:47,764 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YoYoCMS.PhoneBook.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-08-19 10:13:47,764 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YoYoCMS.PhoneBook.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-08-19 10:13:47,769 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YoYoCMS.PhoneBook.Users.Dto.CreateUserInput
+DEBUG 2016-08-19 10:13:47,792 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YoYoCMS.PhoneBook.Users.Dto.UserListDto
+DEBUG 2016-08-19 10:13:47,793 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YoYoCMS.PhoneBook.Phones.PhoneListDto
+DEBUG 2016-08-19 10:13:47,794 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YoYoCMS.PhoneBook.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-08-19 10:13:47,797 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YoYoCMS.PhoneBook.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-08-19 10:13:47,798 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YoYoCMS.PhoneBook.Persons.Dtos.PersonEditDto
+DEBUG 2016-08-19 10:13:47,799 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YoYoCMS.PhoneBook.Persons.Dtos.PersonListDto
+DEBUG 2016-08-19 10:13:48,724 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YoYoCMS.PhoneBook.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-08-19 10:13:48,726 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YoYoCMS.PhoneBook.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-08-19 10:13:48,727 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YoYoCMS.PhoneBook.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-08-19 10:13:48,728 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YoYoCMS.PhoneBook.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-08-19 10:13:48,729 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'YoYoCMS.PhoneBook.Persons.IPersonAppService' with service name 'app/person'.
+DEBUG 2016-08-19 10:13:49,241 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"21188fbd-352d-43e0-8930-9f9d7548415c","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-08-19T10:13:49.2241591+08:00","Properties":{}}
+DEBUG 2016-08-19 10:13:49,242 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"c8a953d6-5f3b-4acb-8864-083c9a90dd1b","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-08-19T10:13:49.2241591+08:00","Properties":{}}
+WARN  2016-08-19 10:13:54,070 [11   ] Abp.Logging.LogHelper                    - Can not find 'PersonHeaderInfo' in localization source 'PhoneBook'!
+DEBUG 2016-08-19 10:13:57,356 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"2cb330db-d4db-43e5-abf3-7bca16b465db","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-08-19T10:13:57.3562949+08:00","Properties":{}}
+DEBUG 2016-08-19 10:13:57,377 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 2cb330db-d4db-43e5-abf3-7bca16b465db
+DEBUG 2016-08-19 10:22:12,098 [68   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: c8a953d6-5f3b-4acb-8864-083c9a90dd1b
+DEBUG 2016-08-19 10:22:12,111 [68   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 2cb330db-d4db-43e5-abf3-7bca16b465db
+DEBUG 2016-08-19 10:22:12,115 [61   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 21188fbd-352d-43e0-8930-9f9d7548415c
