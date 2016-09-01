@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
+using YoYoCMS.PhoneBook.Dto;
 using YoYoCMS.PhoneBook.Persons.Dtos;
 
 namespace YoYoCMS.PhoneBook.Persons
@@ -57,7 +58,21 @@ namespace YoYoCMS.PhoneBook.Persons
         /// </summary>
         Task BatchDeletePersonAsync(IEnumerable<int> input);
 
-        #endregion
+
+
+
+        /// <summary>
+        /// 到处excel到文件
+        /// </summary>
+        /// <param name="personListDto"></param>
+        /// <returns></returns>
+	    FileDto ExportToFile(PersonListDto personListDto);
+
+
+
+
+
+	    #endregion
 
     }
 }

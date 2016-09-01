@@ -8,6 +8,8 @@ using Abp.Authorization;
 using Abp.AutoMapper;
 using Abp.Domain.Repositories;
 using Abp.Linq.Extensions;
+using OfficeOpenXml;
+using YoYoCMS.PhoneBook.Dto;
 using YoYoCMS.PhoneBook.Persons.Authorization;
 using YoYoCMS.PhoneBook.Persons.Dtos;
 
@@ -153,7 +155,19 @@ namespace YoYoCMS.PhoneBook.Persons
     await _personRepository.DeleteAsync(s=>input.Contains(s.Id));
     }
 
-            #endregion
+        public FileDto ExportToFile(PersonListDto personListDto)
+        {
+            var excelPackage=new ExcelPackage();
+
+            var sheet = excelPackage.Workbook.Worksheets.Add("电话簿");
+            sheet.OutLineApplyStyle = true;
+
+            
+
+            throw new System.NotImplementedException();
+        }
+
+        #endregion
 
     }
     }
