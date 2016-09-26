@@ -360,7 +360,9 @@
     <Content Include="css\main.css.map">
       <DependentUpon>main.css</DependentUpon>
     </Content>
-    <Content Include="log4net.config" />
+    <Content Include="log4net.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Content\toastr.scss" />
     <Content Include="Content\toastr.less" />
     <Content Include="fonts\FontAwesome.otf" />

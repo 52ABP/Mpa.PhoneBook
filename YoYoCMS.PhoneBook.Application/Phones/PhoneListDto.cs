@@ -1,10 +1,10 @@
-﻿using Abp.AutoMapper;
-using Abp.Domain.Entities.Auditing;
+﻿using Abp.Application.Services.Dto;
+using Abp.AutoMapper;
 
 namespace YoYoCMS.PhoneBook.Phones
 {
     [AutoMapFrom(typeof (Phone))]
-    public class PhoneListDto : CreationAuditedEntity<long>
+    public class PhoneListDto : CreationAuditedEntityDto<long>
     {
         /// <summary>
         ///     电话类型
