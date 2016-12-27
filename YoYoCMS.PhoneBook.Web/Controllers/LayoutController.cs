@@ -13,6 +13,7 @@ namespace YoYoCMS.PhoneBook.Web.Controllers
     {
         private readonly IUserNavigationManager _userNavigationManager;
         private readonly ILocalizationManager _localizationManager;
+        private readonly ILanguageManager _languageManager;
         private readonly ISessionAppService _sessionAppService;
         private readonly IMultiTenancyConfig _multiTenancyConfig;
 
@@ -20,12 +21,13 @@ namespace YoYoCMS.PhoneBook.Web.Controllers
             IUserNavigationManager userNavigationManager, 
             ILocalizationManager localizationManager,
             ISessionAppService sessionAppService, 
-            IMultiTenancyConfig multiTenancyConfig)
+            IMultiTenancyConfig multiTenancyConfig, ILanguageManager languageManager)
         {
             _userNavigationManager = userNavigationManager;
             _localizationManager = localizationManager;
             _sessionAppService = sessionAppService;
             _multiTenancyConfig = multiTenancyConfig;
+            _languageManager = languageManager;
         }
 
         [ChildActionOnly]
@@ -45,8 +47,8 @@ namespace YoYoCMS.PhoneBook.Web.Controllers
         {
             var model = new LanguageSelectionViewModel
                         {
-                            CurrentLanguage = _localizationManager.CurrentLanguage,
-                            Languages = _localizationManager.GetAllLanguages()
+                            CurrentLanguage = _languageManager.CurrentLanguage,
+                            Languages = _languageManager.GetLanguages()
                         };
 
             return PartialView("_LanguageSelection", model);

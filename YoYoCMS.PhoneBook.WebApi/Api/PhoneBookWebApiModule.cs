@@ -19,10 +19,9 @@ namespace YoYoCMS.PhoneBook.Api
         {
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
 
-            DynamicApiControllerBuilder
-                .ForAll<IApplicationService>(typeof (PhoneBookApplicationModule).Assembly, "app")
-                .Build();
-
+            Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
+                 .ForAll<IApplicationService>(typeof(PhoneBookApplicationModule).Assembly, "app")
+                 .Build();
 
             Configuration.Modules.AbpWebApi().HttpConfiguration.Filters.Add(new HostAuthenticationFilter("Bearer"));
 

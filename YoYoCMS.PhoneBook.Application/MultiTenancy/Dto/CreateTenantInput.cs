@@ -7,7 +7,7 @@ using YoYoCMS.PhoneBook.Users;
 namespace YoYoCMS.PhoneBook.MultiTenancy.Dto
 {
     [AutoMapTo(typeof(Tenant))]
-    public class CreateTenantInput : IInputDto
+    public class CreateTenantInput 
     {
         [Required]
         [StringLength(AbpTenantBase.MaxTenancyNameLength)]

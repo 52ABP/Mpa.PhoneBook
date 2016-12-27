@@ -11,7 +11,7 @@ namespace YoYoCMS.PhoneBook.Persons.Dtos
     /// 用于添加或编辑 联系人时使用的DTO
     /// </summary>
   
-    public class GetPersonForEditOutput : IOutputDto
+    public class GetPersonForEditOutput 
     {
  
 

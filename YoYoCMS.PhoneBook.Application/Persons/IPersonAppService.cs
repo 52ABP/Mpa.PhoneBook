@@ -18,17 +18,17 @@ namespace YoYoCMS.PhoneBook.Persons
         /// <summary>
         /// 根据查询条件获取联系人分页列表
         /// </summary>
-        Task<PagedResultOutput<PersonListDto>> GetPagedPersonsAsync(GetPersonInput input);
+        Task<PagedResultDto<PersonListDto>> GetPagedPersonsAsync(GetPersonInput input);
 
         /// <summary>
         /// 通过Id获取联系人信息进行编辑或修改 
         /// </summary>
-        Task<GetPersonForEditOutput> GetPersonForEditAsync(NullableIdInput<int> input);
+        Task<GetPersonForEditOutput> GetPersonForEditAsync(NullableIdDto<int> input);
 
 		  /// <summary>
         /// 通过指定id获取联系人ListDto信息
         /// </summary>
-		Task<PersonListDto> GetPersonByIdAsync(IdInput<int> input);
+		Task<PersonListDto> GetPersonByIdAsync(EntityDto input);
 
 
 
@@ -51,7 +51,7 @@ namespace YoYoCMS.PhoneBook.Persons
         /// <summary>
         /// 删除联系人
         /// </summary>
-        Task DeletePersonAsync(IdInput<int> input);
+        Task DeletePersonAsync(EntityDto input);
 
         /// <summary>
         /// 批量删除联系人

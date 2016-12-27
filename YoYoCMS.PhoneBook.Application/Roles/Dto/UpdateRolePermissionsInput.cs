@@ -7,7 +7,7 @@ namespace YoYoCMS.PhoneBook.Roles.Dto
     /// <summary>
     /// 修改角色权限信息接收的DTO
     /// </summary>
-    public class UpdateRolePermissionsInput : IInputDto
+    public class UpdateRolePermissionsInput 
     {
         /// <summary>
         /// 角色ID

@@ -9,7 +9,7 @@ using YoYoCMS.PhoneBook.Users;
 
 namespace YoYoCMS.PhoneBook.Features
 {
-    public class FeatureValueStore : AbpFeatureValueStore<Tenant, Role, User>
+    public class FeatureValueStore : AbpFeatureValueStore<Tenant,  User>
     {
         public FeatureValueStore(
             ICacheManager cacheManager, 

@@ -12,7 +12,7 @@ namespace YoYoCMS.PhoneBook.Persons.Dtos
     /// 联系人新增和编辑时用Dto
     /// </summary>
     
-    public class CreateOrUpdatePersonInput : IInputDto
+    public class CreateOrUpdatePersonInput 
     {
 
 		public PersonEditDto  PersonEditDto {get;set;}

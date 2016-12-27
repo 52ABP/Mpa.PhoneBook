@@ -47,8 +47,7 @@ namespace YoYoCMS.PhoneBook.Migrations.SeedData
                 permissions.AddRange(personPermissions);
                 foreach (var permission in permissions)
                 {
-                    if (!permission.IsGrantedByDefault)
-                    {
+         
                         _context.Permissions.Add(
                             new RolePermissionSetting
                             {
@@ -58,7 +57,7 @@ namespace YoYoCMS.PhoneBook.Migrations.SeedData
                                 RoleId = adminRole.Id
                             });
                     }
-                }
+ 
 
                 _context.SaveChanges();
             }

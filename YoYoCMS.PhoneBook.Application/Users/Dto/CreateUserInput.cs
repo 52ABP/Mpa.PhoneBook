@@ -7,7 +7,7 @@ using Abp.AutoMapper;
 namespace YoYoCMS.PhoneBook.Users.Dto
 {
     [AutoMap(typeof(User))]
-    public class CreateUserInput : IInputDto
+    public class CreateUserInput 
     {
         [Required]
         [StringLength(AbpUserBase.MaxUserNameLength)]

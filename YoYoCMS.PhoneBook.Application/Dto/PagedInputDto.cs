@@ -3,7 +3,7 @@ using Abp.Application.Services.Dto;
 
 namespace YoYoCMS.PhoneBook.Dto
 {
-    public class PagedInputDto : IInputDto, IPagedResultRequest
+    public class PagedInputDto :  IPagedResultRequest
     {
         [Range(1, PhoneBookConsts.MaxPageSize)]
         public int MaxResultCount { get; set; }

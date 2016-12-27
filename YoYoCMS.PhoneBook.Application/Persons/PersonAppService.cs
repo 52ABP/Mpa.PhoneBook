@@ -36,9 +36,11 @@ namespace YoYoCMS.PhoneBook.Persons
     /// <summary>
     /// 根据查询条件获取联系人分页列表
     /// </summary>
-    public async Task<PagedResultOutput<PersonListDto>> GetPagedPersonsAsync(GetPersonInput input)
+    public async Task<PagedResultDto<PersonListDto>> GetPagedPersonsAsync(GetPersonInput input)
 {
-			
+		
+
+
     var query = _personRepository.GetAll();
     //TODO:根据传入的参数添加过滤条件
 
@@ -50,7 +52,7 @@ namespace YoYoCMS.PhoneBook.Persons
     .ToListAsync();
 
     var personListDtos = persons.MapTo<List<PersonListDto>>();
-    return new PagedResultOutput<PersonListDto>(
+    return new PagedResultDto<PersonListDto>(
     personCount,
     personListDtos
     );
@@ -59,7 +61,7 @@ namespace YoYoCMS.PhoneBook.Persons
         /// <summary>
     /// 通过Id获取联系人信息进行编辑或修改 
     /// </summary>
-    public async Task<GetPersonForEditOutput> GetPersonForEditAsync(NullableIdInput<int> input)
+    public async Task<GetPersonForEditOutput> GetPersonForEditAsync(NullableIdDto<int> input)
 {
     var output=new GetPersonForEditOutput();
 
@@ -83,7 +85,7 @@ namespace YoYoCMS.PhoneBook.Persons
     /// <summary>
     /// 通过指定id获取联系人ListDto信息
     /// </summary>
-    public async Task<PersonListDto> GetPersonByIdAsync(IdInput<int> input)
+    public async Task<PersonListDto> GetPersonByIdAsync(EntityDto input)
 {
     var entity = await _personRepository.GetAsync(input.Id);
 
@@ -135,11 +137,13 @@ namespace YoYoCMS.PhoneBook.Persons
     await _personRepository.UpdateAsync(input.MapTo(entity));
     }
 
-    /// <summary>
+  
+
+        /// <summary>
     /// 删除联系人
     /// </summary>
     [AbpAuthorize(PersonAppPermissions.Person_DeletePerson)]
-    public async Task DeletePersonAsync(IdInput<int> input)
+    public async Task DeletePersonAsync(EntityDto input)
 {
     //TODO:删除前的逻辑判断，是否允许删除
     await _personRepository.DeleteAsync(input.Id);

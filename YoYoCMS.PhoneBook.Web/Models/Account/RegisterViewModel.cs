@@ -7,7 +7,7 @@ using YoYoCMS.PhoneBook.Users;
 
 namespace YoYoCMS.PhoneBook.Web.Models.Account
 {
-    public class RegisterViewModel : IInputDto, IValidatableObject
+    public class RegisterViewModel :  IValidatableObject
     {
         /// <summary>
         /// Not required for single-tenant applications.
