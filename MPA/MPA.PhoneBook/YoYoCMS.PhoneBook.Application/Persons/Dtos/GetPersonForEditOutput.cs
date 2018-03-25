@@ -8,18 +8,18 @@ using YoYoCMS.PhoneBook.Persons;
 namespace YoYoCMS.PhoneBook.Persons.Dtos
 {
 	/// <summary>
-    /// 用于添加或编辑 联系人时使用的DTO
-    /// </summary>
+	/// 用于添加或编辑 联系人时使用的DTO
+	/// </summary>
   
-    public class GetPersonForEditOutput 
-    {
+	public class GetPersonForEditOutput 
+	{
  
 
-	      /// <summary>
-         /// Person编辑状态的DTO
-        /// </summary>
-    public PersonEditDto Person{get;set;}
+		  /// <summary>
+		 /// Person编辑状态的DTO
+		/// </summary>
+	public PersonEditDto Person{get;set;}
 
 
-    }
+	}
 }
